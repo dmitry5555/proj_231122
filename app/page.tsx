@@ -1,40 +1,28 @@
 import Image from 'next/image'
 import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+const prisma = new PrismaClient()
 
-// async function createUser() {
-// 	try {
-// 	  const newUser = await prisma.user.create({
-// 		data: {
-// 		  name: "Jollof Rice 2",
-// 		  email: "1@2.31",
-// 		},
-// 	  });
-// 	  console.log('User created:', newUser);
-// 	} catch (error) {
-// 	  console.error('Error creating user:', error);
-// 	} finally {
-// 	  await prisma.$disconnect();
-// 	}
-//   }
-  
-//   createUser();
-  
-// Create new food
-// prisma.user.create({
-// 	data: {
-// 		name: "Jollof Rice 1",
-// 		email: "1@2.3",
-// 	},
-// });
-// prisma.user.create({
-// 	data: {
-// 		email: 'test',
-// 		name: 'Nick Name',
-// 	},
-// });
-const getUsers = await prisma.user.findMany()
-console.log(getUsers[0])
+async function main() {
+  // ... you will write your Prisma Client queries here
+	const user = await prisma.user.create({
+		data: {
+		name: "Test User 1155123244123",
+		email: "3312123123123123",
+		},
+	});
+	const getUsers = await prisma.user.findMany()
+	console.log(user)
+}
+
+main()
+  .then(async () => {
+    await prisma.$disconnect()
+  })
+  .catch(async (e) => {
+    // console.error(e)
+    await prisma.$disconnect()
+    // process.exit(1)
+  })
 
 
 export default function Home() {
