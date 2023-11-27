@@ -35,7 +35,7 @@ export default function Home() {
 				<div className='grid'>
 					<div className='text-6xl font-bold mb-6'><h1>Intuitive Database Client for TypeScript</h1></div>
 						<div> 
-							<p className='text-md mb-6 text-lg'>Amplication is an open-source development tool. It helps you develop quality Node.js applications without spending time on repetitive coding tasks. It’s perfect for both backend and fullstack developers.</p>
+							<p className='mb-6 text-lg'>Amplication is an open-source development tool. It helps you develop quality Node.js applications without spending time on repetitive coding tasks. It’s perfect for both backend and fullstack developers.</p>
 						</div>
 					<div>
 					<button className='bg-black px-6 py-2 rounded text-white border-2 border-transparent font-light mr-3'>Join us</button>
@@ -189,6 +189,90 @@ export default function Home() {
 				</div>
 
 			</div>
+
+			<div className='border rounded border-gray-300 overflow-hidden'>
+				<div className='grid grid-cols-5 bg-white px-4 py-3 border-bottom border-gray-200 text-sm'>
+					<div className='font-semibold'>Custom Domains</div>
+					<div>Single Subdomain</div>
+					<div>1 Custom Domain</div>
+					<div>5 Custom Domain</div>
+					<div>10 Custom Domain</div>
+				</div>
+				<div className='grid grid-cols-5 bg-gray-50 px-4 py-3 border-b border-gray-200 text-sm'>
+					<div className='font-semibold'>API Access</div>
+					<div>-</div>
+					<div>-</div>
+					<div>
+						<svg viewBox="0 0 256 256" class="w-5 h-5" astro-icon="ph:check-circle-fill"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.2 104.2 0 0 0 128 24zm49.5 85.8-58.6 56a8.1 8.1 0 0 1-5.6 2.2 7.7 7.7 0 0 1-5.5-2.2l-29.3-28a8 8 0 1 1 11-11.6l23.8 22.7 53.2-50.7a8 8 0 0 1 11 11.6z"></path></svg>
+					</div>
+					<div>
+						<svg viewBox="0 0 256 256" class="w-5 h-5" astro-icon="ph:check-circle-fill"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.2 104.2 0 0 0 128 24zm49.5 85.8-58.6 56a8.1 8.1 0 0 1-5.6 2.2 7.7 7.7 0 0 1-5.5-2.2l-29.3-28a8 8 0 1 1 11-11.6l23.8 22.7 53.2-50.7a8 8 0 0 1 11 11.6z"></path></svg>
+					</div>
+				</div>
+				<div className='grid grid-cols-5 bg-white px-4 py-3 border-b border-gray-200 text-sm'>
+					<div className='font-semibold'>Data Export</div>
+					<div>Basic</div>
+					<div>Advanced</div>
+					<div>Advanced</div>
+					<div>Advanced</div>
+				</div>
+				<div className='grid grid-cols-5 bg-gray-50 px-4 py-3 border-b border-gray-200 text-sm'>
+					<div className='font-semibold'>SSO Integration</div>
+					<div>-</div>
+					<div>-</div>
+					<div>-</div>
+					<div>
+						<svg viewBox="0 0 256 256" class="w-5 h-5" astro-icon="ph:check-circle-fill"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.2 104.2 0 0 0 128 24zm49.5 85.8-58.6 56a8.1 8.1 0 0 1-5.6 2.2 7.7 7.7 0 0 1-5.5-2.2l-29.3-28a8 8 0 1 1 11-11.6l23.8 22.7 53.2-50.7a8 8 0 0 1 11 11.6z"></path></svg>
+					</div>
+				</div>
+				<div className='grid grid-cols-5 bg-white px-4 py-3 border-bottom border-gray-200 text-sm'>
+					<div className='font-semibold'>Custom Domains</div>
+					<div>Limited</div>
+					<div>Limited</div>
+					<div>Limited</div>
+					<div>Unlimited</div>
+				</div>
+	 		 </div>
+
+			 <div className='grid mx-auto my-12'>
+				<div className='mx-auto text-center'>
+					<h1 className='text-3xl font-semibold mb-4'>Pricing</h1>
+					<p className='text-lg text-slate-500 mb-12'>Choose the right plan for your workspace</p>
+				</div>
+				<div className='grid grid-cols-2 gap-4'>
+					<div className='rounded-md px-6 py-5 border border-gray-200'>
+						<div className='mb-2'>Pro</div>
+						<div className='mb-2'>
+							$<span className='font-semibold text-3xl'>49</span> /month
+						</div>
+						<div className='text-sm text-gray-500 mb-8'>Growing for business success</div>
+						<div className='text-sm mb-3'>
+							<svg className='inline mr-3 w-5' viewBox="0 0 256 256" astro-icon="ph:check-circle-fill"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.2 104.2 0 0 0 128 24zm49.5 85.8-58.6 56a8.1 8.1 0 0 1-5.6 2.2 7.7 7.7 0 0 1-5.5-2.2l-29.3-28a8 8 0 1 1 11-11.6l23.8 22.7 53.2-50.7a8 8 0 0 1 11 11.6z"></path></svg>
+							10 projects
+						</div>
+						<div className='text-sm'>
+							<svg className='inline mr-3 w-5' viewBox="0 0 256 256" astro-icon="ph:check-circle-fill"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.2 104.2 0 0 0 128 24zm49.5 85.8-58.6 56a8.1 8.1 0 0 1-5.6 2.2 7.7 7.7 0 0 1-5.5-2.2l-29.3-28a8 8 0 1 1 11-11.6l23.8 22.7 53.2-50.7a8 8 0 0 1 11 11.6z"></path></svg>
+							Standard support
+						</div>
+					</div>
+					<div className='rounded-md px-6 py-5 border border-gray-200'>
+						<div className='mb-2'>Business</div>
+						<div className='mb-2'>
+							$<span className='font-semibold text-3xl'>299</span> /month
+						</div>
+						<div className='text-sm text-gray-500 mb-8'>For mission-critical apps</div>
+						<div className='text-sm mb-3'>
+							<svg className='inline mr-3 w-5' viewBox="0 0 256 256" astro-icon="ph:check-circle-fill"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.2 104.2 0 0 0 128 24zm49.5 85.8-58.6 56a8.1 8.1 0 0 1-5.6 2.2 7.7 7.7 0 0 1-5.5-2.2l-29.3-28a8 8 0 1 1 11-11.6l23.8 22.7 53.2-50.7a8 8 0 0 1 11 11.6z"></path></svg>
+							15 projects
+						</div>
+						<div className='text-sm'>
+							<svg className='inline mr-3 w-5' viewBox="0 0 256 256" astro-icon="ph:check-circle-fill"><path fill="currentColor" d="M128 24a104 104 0 1 0 104 104A104.2 104.2 0 0 0 128 24zm49.5 85.8-58.6 56a8.1 8.1 0 0 1-5.6 2.2 7.7 7.7 0 0 1-5.5-2.2l-29.3-28a8 8 0 1 1 11-11.6l23.8 22.7 53.2-50.7a8 8 0 0 1 11 11.6z"></path></svg>
+							Premium support
+						</div>
+					</div>
+				</div>
+			 </div>
+
 		</div>
 
 
