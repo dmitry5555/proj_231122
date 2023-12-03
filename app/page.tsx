@@ -1,5 +1,8 @@
 import Image from 'next/image'
+import Menu from './Menu'
+
 import { PrismaClient } from "@prisma/client"
+
 // const prisma = new PrismaClient()
 
 // // Prisma start
@@ -29,6 +32,7 @@ import { PrismaClient } from "@prisma/client"
 export default function Home() {
   return (
     <main className="px-6 py-12 max-w-screen-xl mx-auto">
+		<Menu />
 		<div className="mb-12 w-full grid grid-cols-1 md:grid-cols-2 gap-4">
 		
 			<div className='my-48'>
@@ -39,7 +43,7 @@ export default function Home() {
 						</div>
 					<div>
 					<button className='bg-black px-6 py-2 rounded text-white border-2 border-transparent font-light mr-3'>Join us</button>
-					<button className='bg-white px-6 py-2 rounded font-light border-2 '>Learn more</button>
+					<button className='bg-white px-6 py-2 rounded font-light border-2 '> <a href="/lp"> Learn more</a></button>
 					</div>
 				</div>
 			</div>
@@ -147,23 +151,11 @@ export default function Home() {
 		</div>
 
 		<div>
-			<div className='grid mb-12'>
-				<div className='text-3xl font-semibold mb-12'>
-					Color palette #1 
-				</div>
-
-				<div className='grid gap-4 mb-24'>
-					<div className='h-32 min-w-full rounded bg-[#F6F1F1] px-4 py-4'>F6F1F1</div>
-					<div className='h-32 min-w-full rounded bg-[#19A7CE] px-4 py-4'>F6F1F1</div>
-					<div className='h-32 min-w-full rounded bg-[#146C94] px-4 py-4'>F6F1F1</div>
-					<div className='h-32 min-w-full rounded bg-[#000000] px-4 py-4'>F6F1F1</div>
-				</div>
-
-			</div>
+		
 
 			<div className='grid mb-6'>
 				<div className='text-3xl font-semibold mb-12'>
-					Color palette #2 
+					Color palette 
 				</div>
 
 				<div className='grid  gap-4 mb-24'>
@@ -175,20 +167,6 @@ export default function Home() {
 
 			</div>
 
-
-			<div className='grid mb-6'>
-				<div className='text-3xl font-semibold mb-12'>
-					Color palette #3
-				</div>
-
-				<div className='grid gap-4 mb-24'>
-					<div className='h-32 min-w-full rounded bg-[#222831] px-4 py-4'>F6F1F1</div>
-					<div className='h-32 min-w-full rounded bg-[#393E46] px-4 py-4'>F6F1F1</div>
-					<div className='h-32 min-w-full rounded bg-[#0092CA] px-4 py-4'>F6F1F1</div>
-					<div className='h-32 min-w-full rounded bg-[#EEEEEE] px-4 py-4'>F6F1F1</div>
-				</div>
-
-			</div>
 
 			<div className='border rounded border-gray-300 overflow-hidden'>
 				<div className='grid grid-cols-5 bg-white px-4 py-3 border-bottom border-gray-200 text-sm'>
@@ -274,10 +252,31 @@ export default function Home() {
 			 </div>
 
 		</div>
+		<div className='mx-auto text-center'>
+			<div className='text-3xl font-semibold mb-4'>
+				Next-generation Node.js and TypeScript ORM
+			</div>
+			<p className='text-lg text-slate-500 mb-12'>Prisma unlocks a new level of developer experience when working with databases thanks to its intuitive data model, automated migrations, type-safety & auto-completion.
+</p>
 
-
-		
-		
+		</div>
+		<div className="mb-12 w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div className='p-6 rounded-xl bg-gray-100 border shadow-sm hover:shadow-lg'>
+				<div className='text-blue-800 mb-2 rounded-full bg-blue-100 border border-blue-200 px-3 py-1 inline-block font-medium text-xs'>Prisma ORM</div>
+				<div className='mb-2 font-semibold text-2xl'>What is Prisma</div>
+				<div className=''>An overview of what Prisma ORM is and how it works.</div>
+			</div>
+			<div className='p-6 rounded-xl bg-gray-100 border shadow-sm hover:shadow-lg'>
+				<div className='text-blue-800 mb-2 rounded-full bg-blue-100 border border-blue-200 px-3 py-1 inline-block font-medium text-xs'>Prisma ORM</div>
+				<div className='mb-2 font-semibold text-2xl'>Prisma in your stack</div>
+				<div className=''>An overview of what Prisma ORM is and how it works.</div>
+			</div>
+			<div className='p-6 rounded-xl bg-gray-100 border shadow-sm hover:shadow-lg'>
+				<div className='text-blue-800 mb-2 rounded-full bg-blue-100 border border-blue-200 px-3 py-1 inline-block font-medium text-xs'>Prisma ORM</div>
+				<div className='mb-2 font-semibold text-2xl'>CRUD</div>
+				<div className=''>An overview of what Prisma ORM is and how it works.</div>
+			</div>
+		</div>		
 
     </main>
   )
