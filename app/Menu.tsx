@@ -12,7 +12,7 @@ export default function Menu() {
 				<a href="" className='text-sm py-1'>Contact</a>
 			</div>
 			<div className='grid md:grid-cols-2 md:items-center md:place-items-end'>
-				<a href="" className='text-sm py-2'>Log in</a>
+				<a href="/signup" className='text-sm py-2'>Signup</a>
 				<button className='text-md w-fit mt-2 text-white mb-2 rounded-full bg-sky-600 px-4 py-1.5'>Try for free</button>
 			</div>
 		</div>
