@@ -118,7 +118,7 @@ export default function Home() {
 
 						<div className='text-2xl font-medium text-zinc-800 mb-4'><h3> The ORM that plays well with any framework</h3></div>
 							<div> 
-								<p className='mb-6 text-zinc-500'>	Easy to integrate into your framework of choice, Prisma simplifies database access, saves repetitive CRUD boilerplate and increases type safety. It's the perfect database toolkit for building robust and scalable web APIs.
+								<p className='mb-6 text-zinc-500'>	Easy to integrate into your framework of choice, Prisma simplifies database access, saves repetitive CRUD boilerplate and increases type safety. It s the perfect database toolkit for building robust and scalable web APIs.
 		</p>
 							</div>
 						<div>
