@@ -3,12 +3,33 @@ import { PrismaClient } from "@prisma/client"
 import Menu from '../Menu'
 import Footer from '../Footer'
 
+const prisma = new PrismaClient()
+// const [errorStat, setErrorStat] = useState('');
+
+
 export default function Home() {
 	const addUser = async(formData: FormData) => {
 		"use server"
 
 		const name = formData.get('name')
-		console.log(name)
+		const email = formData.get('email')
+		// console.log(name)
+
+		const checkEmail = await prisma.user.findMany ({
+			where: { email:email }
+		})
+		// if (checkEmail)
+		// {
+		// 	errorStat = "this email is already used"
+  		// 	return
+		// }
+		const user = await prisma.user.create({
+			data: {
+			  name,
+			  email,
+			},
+		});
+		console.log(user)
 	}
 
   return (
@@ -19,17 +40,17 @@ export default function Home() {
 		
 			<div className="mb-12 w-full grid gap-4">
 				<form className="max-w-xs shadow p-8 mx-auto" action={addUser} method="POST">
-					<label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Username</label>
-					<input className="max-w-full rounded border-2 py-2 px-4 mb-4" type="text" name="name" />
+						<label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Username</label>
+						<input className="max-w-full rounded border-2 py-2 px-4 mb-4" type="text" name="name" />
+						<label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
+						<input className="max-w-full rounded border-2 py-2 px-4 mb-4" type="email" name="email" />
 					<button className="py-2 px-4 bg-sky-600  text-white rounded" type="submit">Submit</button>
 				</form>
+				{/* <div id="formError" className="">{errorStat}</div> */}
 			</div>
-
+	
 		</div>
 		<Footer />
     </main>
   )
-
-
-  
 }
