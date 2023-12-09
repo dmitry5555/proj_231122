@@ -2,7 +2,7 @@ import Image from 'next/legacy/image'
 import Menu from './Menu'
 import Footer from './Footer'
 
-import { PrismaClient } from "@prisma/client"
+// import { PrismaClient } from "@prisma/client"
 
 // const prisma = new PrismaClient()
 

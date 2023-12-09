@@ -11,11 +11,12 @@ import Footer from '../Footer'
 // 	const user = await prisma.user.create({
 // 		data: {
 // 		name: "Test User 1155123244123",
-// 		email: "3312123123123123",
+// 		email: "1331112",
 // 		},
 // 	});
 // 	const getUsers = await prisma.user.findMany()
 // 	console.log(user)
+// 	console.log(getUsers)
 // }
 
 // main()
